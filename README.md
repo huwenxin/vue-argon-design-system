@@ -1,9 +1,11 @@
-<h2>Kurze Anleitung zum Starten: Steps to install:</h2>
+<h2>Kurze Anleitung zum Starten -- Steps to install:</h2>
 <p>1. Make sure you have <a href="https://nodejs.org/en/">Node.js</a> installed;</p>
 <p>2. Change to the directory with package.json ;</p>
 <p>3. Run <code class="highlighter-rouge">npm install</code> or <code class="highlighter-rouge">yarn install</code>;</p>
 <p>4. Run <code class="highlighter-rouge">npm run serve</code> or <code class="highlighter-rouge">yarn serve</code>.</p>
+<br>
 
+<p>Original Readme:</p>
 <h1 id="argon-design-system"><a href="https://www.creative-tim.com/product/vue-argon-design-system">Vue Argon Design System</a></h1>
 
 <p><img src="https://s3.amazonaws.com/creativetim_bucket/products/92/original/opt_argon_vue_thumbnail.jpg?1534236902" alt="Product Gif" /></p>
