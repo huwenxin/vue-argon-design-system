@@ -502,7 +502,7 @@
 
 <script>
 export default {
-  name: "home",
+  name: "landing",
   components: {}
 };
 </script>

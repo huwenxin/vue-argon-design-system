@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    { "name": "Course",           "class": "mount"},
+    { "name": "AlignmentObject",  "class": "init" },
+    { "name": "PropertyValue",    "class": "init" },
+    { "name": "ItemList",         "class": "init" },
+    { "name": "Book",             "class": "init" },
+    { "name": "Article",          "class": "init" },
+    { "name": "DigitalDocument",  "class": "init" },
+    { "name": "Lecturer",         "class": "init" },
+    { "name": "Author",           "class": "init" }
+  ],
+  "links": [
+    { "source":  0,  "target":  1,  "value":  "educationalAlignment", "type": "depends" },
+    { "source":  0,  "target":  2,  "value":  "additionalProperty",   "type": "depends" },
+    { "source":  0,  "target":  3,  "value":  "about",                "type": "depends" },
+    { "source":  0,  "target":  4,  "value":  "citation",             "type": "needs"   },
+    { "source":  0,  "target":  5,  "value":  "citation",             "type": "needs"   },
+    { "source":  0,  "target":  6,  "value":  "citation",             "type": "needs"   },
+    { "source":  0,  "target":  7,  "value":  "accountablePerson",    "type": "needs"   },
+    { "source":  5,  "target":  8,  "value":  "author",               "type": "needs"   },
+    { "source":  6,  "target":  8,  "value":  "author",               "type": "needs"   },
+    { "source":  7,  "target":  8,  "value":  "author",               "type": "depends" }
+  ]
+}
