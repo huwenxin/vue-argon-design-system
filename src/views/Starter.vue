@@ -16,14 +16,19 @@
                             </div>
                         </div>
                     </div>
+                    <!--<div>
+                        <div v-for="(coursejson, index) in siteLoad" v-bind:key="index">
+                            <p>{{ coursejson }}</p>
+                        </div>
+                    </div>-->
                     <base-nav class="navbar-main" type="" expand>
                         <ul class="navbar-nav">
                             <div class="nav-link col-lg-6">
                                 <base-input class="mb-2">
                                     <select class="form-control form-control-alternative">
                                         <option disabled value="" selected>Studiengänge auswählen</option>
-                                        <option value="wi">Wirtschaftsinformatik</option>
-                                        <option value="bwl">BWL</option>
+                                        <option value="wi">WI Bachelor</option>
+                                        <option value="bwl">WI Master</option>
                                     </select>
                                 </base-input>
                             </div>
@@ -32,8 +37,8 @@
                                 <base-input class="mb-2">
                                     <select class="form-control form-control-alternative" @change="coursePost()">
                                         <option disabled value="" selected>Module auswählen</option>
-                                        <option v-for="(coursejson, index) in siteLoad" v-bind:value="index">
-                                                {{ coursejson.label.value }}
+                                        <option v-for="(coursejson, index) in siteLoad" v-bind:key="index">
+                                                {{ coursejson.module.value }}
                                         </option>
                                     </select>
                                 </base-input>
@@ -49,7 +54,8 @@
             <div class="container">
                 <div ref="dim" class="row row-grid align-items-center">
                     <div class="col-md-6">
-                        <Graph :data="data"></Graph>
+                        <!--<Graph :data="data"></Graph>-->
+                        <SvgGraph></SvgGraph>
                         <!--<div style="padding-top: 10px; text-align: center" @click="changeData()">
                             <button>Change Data</button>
                         </div>-->
@@ -58,16 +64,16 @@
                         </div>-->
                     </div>
                     <div class="col-md-6">
-                        <div class="pl-md-5">
-
-                            <h3 v-if="Object.keys(siteLoad).length != 0">{{ siteLoad[3].label.value }}</h3>
+                        <div class="pl-md-5" id="formfield">
+                            <h3 v-if="Object.keys(siteLoad).length != 0">{{ siteLoad[3].module.value }}</h3>
+                            <!--<h3>Überschrift Formular</h3>-->
                             <!--<p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.
                                 Just make sure you enable them first via JavaScript.</p>-->
-                            <p>The kit comes with three pre-built pages to help you get started faster. You can change
+                            <p id="test1">The kit comes with three pre-built pages to help you get started faster. You can change
                                 the text and images and you're good to go.</p>
-                            <p>The kit comes with three pre-built pages to help you get started faster. You can change
+                            <p id="test2">The kit comes with three pre-built pages to help you get started faster. You can change
                                 the text and images and you're good to go.</p>
-                            <a href="/" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful
+                            <a id="test3" href="/" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful
                                 websites</a>
                         </div>
                     </div>
@@ -83,6 +89,7 @@
     import BaseNav from "@/components/BaseNav";
     import CloseButton from "@/components/CloseButton";
     import axios from "axios";
+    import SvgGraph from "./components/SvgGraph";
 
     export default {
         name: "home",
@@ -90,7 +97,8 @@
             Graph,
             BaseDropdown,
             BaseNav,
-            CloseButton
+            CloseButton,
+            SvgGraph
         },
         data() {
             return {
@@ -115,12 +123,13 @@
         },
         methods: {
             changeData() {
-                const dataIndex = Math.floor(Math.random() * this.dataList.length)
+                /*const dataIndex = Math.floor(Math.random() * this.dataList.length)
                 d3.json(this.dataList[dataIndex]).then(data => {
                     this.data = data
                 }).catch(error => {
                     console.error(error)
-                })
+                })*/
+
             },
             startPost(query) {
                 axios.post('http://fbw-sgmwi.th-brandenburg.de:3030/modcat/query', query, {headers: {'Content-Type': 'application/sparql-query'}})
@@ -145,9 +154,15 @@
             }
         },
         beforeMount(){
-            this.startPost('PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ' +
-                'FROM <https://bmake.th-brandenburg.de/module/> WHERE { ?course a <https://schema.org/Course> ; ' +
-                'rdfs:label ?label .}')
+            this.startPost('PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ' +
+                'PREFIX module: <https://bmake.th-brandenburg.de/module/>' +
+                'PREFIX schema: <https://schema.org/>' +
+                'SELECT DISTINCT ?module ?label' +
+                'WHERE { ' +
+                '  ?module a module:Module ;' +
+                '          schema:isPartOf module:WIB ;' +
+                '          rdfs:label ?label.' +
+                '}')
         }
     };
 </script>
@@ -160,55 +175,12 @@
         opacity: 1;
     }
 
-    path.link {
-        fill: none;
-        stroke: #666;
-        stroke-width: 1.5px;
-    }
-    path.link.depends {
-        stroke: #005900;
-        stroke-dasharray: 5, 2;
-    }
-    path.link.needs {
-        stroke: black;
+    g.selected rect {
+        stroke: #cd201f !important;
+        stroke-width: 2px !important;
     }
 
-    circle {
-        fill: #ffff99;
-        stroke: #191900;
-        stroke-width: 1.5px;
-    }
-    circle.system {
-        fill: #cce5ff;
-        stroke: #003366;
-    }
-    circle.mount {
-        fill: #f3a4b5;
-        stroke: darkred;
-    }
-    circle.init {
-        fill: #b2e8b2;
-        stroke: #001900;
-    }
-
-    circle.selected {
-        stroke: #ff6666FF !important;
-        stroke-width: 3px;
-        animation: selected 2s infinite alternate ease-in-out;
-    }
-
-    @keyframes selected {
-        from {
-            stroke-width: 5px;
-            r: 26;
-        }
-        to {
-            stroke-width: 1px;
-            r: 30;
-        }
-    }
-
-    text {
+/*    text {
         font: 10px sans-serif;
         pointer-events: none;
         text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
@@ -229,5 +201,5 @@
     text.caption {
         font-size: 14px;
         font-weight: bold;
-    }
+    }*/
 </style>
