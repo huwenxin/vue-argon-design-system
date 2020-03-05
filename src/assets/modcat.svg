@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="297mm"
-   height="210mm"
-   viewBox="0 0 297 210"
+   width="145mm"
+   height="160mm"
+   viewBox="7 25 297 210"
    version="1.1"
    id="svg887"
    inkscape:version="1.1-dev (ddb55ca, 2020-02-02)"
@@ -420,648 +420,652 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline">
-    <g
-       inkscape:label="#predicateGestaltetDurch"
-       transform="translate(2.9214472,-11.133548)"
-       id="predicateGestaltetDurch"
-       style="opacity:1">
-      <rect
-         inkscape:label="#rectGestaltetDurch"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         id="rectGestaltetDurch"
-         width="28.457788"
-         height="13.777185"
-         x="96.4403"
-         y="55.108742"
-         ry="2.8920915" />
-      <text
-         inkscape:label="#textGestaltetDurch"
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         x="110.57455"
-         y="60.178814"
-         id="textGestaltetDurch"><tspan
+    <g id="pathLabels" style="display:inline">
+      <g
+              inkscape:label="#predicateGestaltetDurch"
+              transform="translate(2.9214472,-11.133548)"
+              id="predicateGestaltetDurch"
+              style="opacity:1">
+        <rect
+                inkscape:label="#rectGestaltetDurch"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                id="rectGestaltetDurch"
+                width="28.457788"
+                height="13.777185"
+                x="96.4403"
+                y="55.108742"
+                ry="2.8920915" />
+        <text
+                inkscape:label="#textGestaltetDurch"
+                xml:space="preserve"
+                style="font-style:normal;font-weight:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                x="110.57455"
+                y="60.178814"
+                id="textGestaltetDurch"><tspan
            sodipodi:role="line"
            id="tspan1476"
            x="110.57455"
            y="60.178814"
            style="text-align:center;text-anchor:middle;stroke-width:0.14909;paint-order:stroke markers fill">gestaltet</tspan><tspan
-           sodipodi:role="line"
-           x="110.57455"
-           y="67.633316"
-           style="text-align:center;text-anchor:middle;stroke-width:0.14909;paint-order:stroke markers fill"
-           id="tspan1480">durch</tspan></text>
-    </g>
-    <g
-       id="predicateUmgesetztIn"
-       transform="translate(76.814494,-9.7966153)"
-       inkscape:label="#predicateUmgesetztIn"
-       style="opacity:1">
-      <rect
-         ry="2.8920915"
-         y="55.108742"
-         x="96.4403"
-         height="13.777185"
-         width="28.457788"
-         id="rectUmgesetztIn"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         inkscape:label="#rectUmgesetztIn" />
-      <text
-         id="textUmgesetztIn"
-         y="60.178814"
-         x="110.57455"
-         style="font-style:normal;font-weight:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         xml:space="preserve"
-         inkscape:label="#textUmgesetztIn"><tspan
+                sodipodi:role="line"
+                x="110.57455"
+                y="67.633316"
+                style="text-align:center;text-anchor:middle;stroke-width:0.14909;paint-order:stroke markers fill"
+                id="tspan1480">durch</tspan></text>
+      </g>
+      <g
+              id="predicateUmgesetztIn"
+              transform="translate(76.814494,-9.7966153)"
+              inkscape:label="#predicateUmgesetztIn"
+              style="opacity:1">
+        <rect
+                ry="2.8920915"
+                y="55.108742"
+                x="96.4403"
+                height="13.777185"
+                width="28.457788"
+                id="rectUmgesetztIn"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                inkscape:label="#rectUmgesetztIn" />
+        <text
+                id="textUmgesetztIn"
+                y="60.178814"
+                x="110.57455"
+                style="font-style:normal;font-weight:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                xml:space="preserve"
+                inkscape:label="#textUmgesetztIn"><tspan
            id="tspan7165"
            style="text-align:center;text-anchor:middle;stroke-width:0.14909;paint-order:stroke markers fill"
            y="60.178814"
            x="110.57455"
            sodipodi:role="line">umgesetzt</tspan><tspan
-           style="text-align:center;text-anchor:middle;stroke-width:0.14909;paint-order:stroke markers fill"
-           y="67.633316"
-           x="110.57455"
-           sodipodi:role="line"
-           id="tspan7181">in</tspan></text>
-    </g>
-    <g
-       inkscape:label="#predicateVerantwortetVon"
-       transform="translate(81.636071,11.726095)"
-       id="predicateVerantwortetVon"
-       inkscape:connector-avoid="true"
-       style="opacity:1">
-      <rect
-         inkscape:label="#rectVerantwortetVon"
-         style="fill:none;stroke-width:0.14976;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         id="rectVerantwortetVon"
-         width="14.302336"
-         height="18.009001"
-         x="82.388924"
-         y="69.192482"
-         ry="3.7804296"
-         transform="matrix(1,0,0.30254369,0.95313552,0,0)" />
-      <text
-         inkscape:label="#textVerantwortetVon"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         x="111.25211"
-         y="73.052574"
-         id="textVerantwortetVon"><tspan
+                style="text-align:center;text-anchor:middle;stroke-width:0.14909;paint-order:stroke markers fill"
+                y="67.633316"
+                x="110.57455"
+                sodipodi:role="line"
+                id="tspan7181">in</tspan></text>
+      </g>
+      <g
+              inkscape:label="#predicateVerantwortetVon"
+              transform="translate(81.636071,11.726095)"
+              id="predicateVerantwortetVon"
+              inkscape:connector-avoid="true"
+              style="opacity:1">
+        <rect
+                inkscape:label="#rectVerantwortetVon"
+                style="fill:none;stroke-width:0.14976;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                id="rectVerantwortetVon"
+                width="14.302336"
+                height="18.009001"
+                x="82.388924"
+                y="69.192482"
+                ry="3.7804296"
+                transform="matrix(1,0,0.30254369,0.95313552,0,0)" />
+        <text
+                inkscape:label="#textVerantwortetVon"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                x="111.25211"
+                y="73.052574"
+                id="textVerantwortetVon"><tspan
            sodipodi:role="line"
            id="tspan7267"
            x="111.25211"
            y="73.052574">verantwortet</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7269"
-           x="111.25211"
-           y="80.507072">von</tspan></text>
-    </g>
-    <g
-       inkscape:label="#predicateGehaltenVon"
-       transform="translate(146.34863,-11.222659)"
-       id="predicateGehaltenVon"
-       style="opacity:1">
-      <rect
-         inkscape:label="#rectGehaltenVon"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         id="rectGehaltenVon"
-         width="28.457788"
-         height="13.777185"
-         x="96.4403"
-         y="55.108742"
-         ry="2.8920915" />
-      <text
-         inkscape:label="#textGehaltenVon"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         x="110.57455"
-         y="60.178814"
-         id="textGehaltenVon"><tspan
+                sodipodi:role="line"
+                id="tspan7269"
+                x="111.25211"
+                y="80.507072">von</tspan></text>
+      </g>
+      <g
+              inkscape:label="#predicateGehaltenVon"
+              transform="translate(146.34863,-11.222659)"
+              id="predicateGehaltenVon"
+              style="opacity:1">
+        <rect
+                inkscape:label="#rectGehaltenVon"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                id="rectGehaltenVon"
+                width="28.457788"
+                height="13.777185"
+                x="96.4403"
+                y="55.108742"
+                ry="2.8920915" />
+        <text
+                inkscape:label="#textGehaltenVon"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                x="110.57455"
+                y="60.178814"
+                id="textGehaltenVon"><tspan
            sodipodi:role="line"
            id="tspan7317"
            x="110.57455"
            y="60.178814">gehalten</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7319"
-           x="110.57455"
-           y="67.633316">von</tspan></text>
-    </g>
-    <g
-       id="predicateVerfasstVon"
-       transform="translate(118.8547,48.495224)"
-       inkscape:label="#predicateVerfasstVon"
-       style="opacity:1">
-      <rect
-         ry="2.8920915"
-         y="55.108742"
-         x="96.4403"
-         height="13.777185"
-         width="28.457788"
-         id="rectVerfasstVon"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         inkscape:label="#rectVerfasstVon" />
-      <text
-         id="textVerfasstVon"
-         y="60.178814"
-         x="110.57455"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         xml:space="preserve"
-         inkscape:label="#textVerfasstVon"><tspan
+                sodipodi:role="line"
+                id="tspan7319"
+                x="110.57455"
+                y="67.633316">von</tspan></text>
+      </g>
+      <g
+              id="predicateVerfasstVon"
+              transform="translate(118.8547,48.495224)"
+              inkscape:label="#predicateVerfasstVon"
+              style="opacity:1">
+        <rect
+                ry="2.8920915"
+                y="55.108742"
+                x="96.4403"
+                height="13.777185"
+                width="28.457788"
+                id="rectVerfasstVon"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                inkscape:label="#rectVerfasstVon" />
+        <text
+                id="textVerfasstVon"
+                y="60.178814"
+                x="110.57455"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                xml:space="preserve"
+                inkscape:label="#textVerfasstVon"><tspan
            sodipodi:role="line"
            id="tspan7357"
            x="110.57455"
            y="60.178814">verfasst</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7359"
-           x="110.57455"
-           y="67.633316">von</tspan></text>
-    </g>
-    <g
-       inkscape:label="#predicateReferenziertAuf"
-       transform="translate(42.630679,47.556817)"
-       id="predicateReferenziertAuf"
-       style="opacity:1">
-      <rect
-         inkscape:label="#rectReferenziertAuf"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         id="rectReferenziertAuf"
-         width="28.457788"
-         height="13.777185"
-         x="96.4403"
-         y="55.108742"
-         ry="2.8920915" />
-      <text
-         inkscape:label="#textReferenziertAuf"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         x="110.57455"
-         y="60.178814"
-         id="textReferenziertAuf"><tspan
+                sodipodi:role="line"
+                id="tspan7359"
+                x="110.57455"
+                y="67.633316">von</tspan></text>
+      </g>
+      <g
+              inkscape:label="#predicateReferenziertAuf"
+              transform="translate(42.630679,47.556817)"
+              id="predicateReferenziertAuf"
+              style="opacity:1">
+        <rect
+                inkscape:label="#rectReferenziertAuf"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                id="rectReferenziertAuf"
+                width="28.457788"
+                height="13.777185"
+                x="96.4403"
+                y="55.108742"
+                ry="2.8920915" />
+        <text
+                inkscape:label="#textReferenziertAuf"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                x="110.57455"
+                y="60.178814"
+                id="textReferenziertAuf"><tspan
            sodipodi:role="line"
            id="tspan7379"
            x="110.57455"
            y="60.178814">referenziert</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7381"
-           x="110.57455"
-           y="67.633316">auf</tspan></text>
-    </g>
-    <g
-       id="predicateHerausgegebenVon"
-       transform="translate(113.22994,99.576654)"
-       inkscape:label="#predicateHerausgegebenVon"
-       style="opacity:1">
-      <rect
-         ry="2.8920915"
-         y="55.108742"
-         x="96.4403"
-         height="13.777185"
-         width="28.457788"
-         id="rectHerausgegebenVon"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         inkscape:label="#rectHerausgegebenVon" />
-      <text
-         id="textHerausgegebenVon"
-         y="60.178814"
-         x="110.57455"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         xml:space="preserve"
-         inkscape:label="#textHerausgegebenVon"><tspan
+                sodipodi:role="line"
+                id="tspan7381"
+                x="110.57455"
+                y="67.633316">auf</tspan></text>
+      </g>
+      <g
+              id="predicateHerausgegebenVon"
+              transform="translate(113.22994,99.576654)"
+              inkscape:label="#predicateHerausgegebenVon"
+              style="opacity:1">
+        <rect
+                ry="2.8920915"
+                y="55.108742"
+                x="96.4403"
+                height="13.777185"
+                width="28.457788"
+                id="rectHerausgegebenVon"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                inkscape:label="#rectHerausgegebenVon" />
+        <text
+                id="textHerausgegebenVon"
+                y="60.178814"
+                x="110.57455"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                xml:space="preserve"
+                inkscape:label="#textHerausgegebenVon"><tspan
            sodipodi:role="line"
            id="tspan7419"
            x="110.57455"
            y="60.178814">herausgegeben</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7421"
-           x="110.57455"
-           y="67.633316">von</tspan></text>
-    </g>
-    <g
-       inkscape:label="#predicateGehoertAn"
-       transform="translate(147.80232,71.396372)"
-       id="predicateGehoertAn"
-       style="opacity:1">
-      <rect
-         inkscape:label="#rectGehoertAn"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         id="rectGehoertAn"
-         width="28.457788"
-         height="13.777185"
-         x="96.4403"
-         y="55.108742"
-         ry="2.8920915" />
-      <text
-         inkscape:label="#textGehoertAn"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         x="110.57455"
-         y="60.178814"
-         id="textGehoertAn"><tspan
+                sodipodi:role="line"
+                id="tspan7421"
+                x="110.57455"
+                y="67.633316">von</tspan></text>
+      </g>
+      <g
+              inkscape:label="#predicateGehoertAn"
+              transform="translate(147.80232,71.396372)"
+              id="predicateGehoertAn"
+              style="opacity:1">
+        <rect
+                inkscape:label="#rectGehoertAn"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                id="rectGehoertAn"
+                width="28.457788"
+                height="13.777185"
+                x="96.4403"
+                y="55.108742"
+                ry="2.8920915" />
+        <text
+                inkscape:label="#textGehoertAn"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                x="110.57455"
+                y="60.178814"
+                id="textGehoertAn"><tspan
            sodipodi:role="line"
            id="tspan7437"
            x="110.57455"
            y="60.178814">gehört</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7439"
-           x="110.57455"
-           y="67.633316">an</tspan></text>
-    </g>
-    <g
-       style="opacity:1"
-       id="predicateEingesetztIn"
-       transform="translate(4.3393593,72.671864)"
-       inkscape:label="#predicateEingesetztIn">
-      <rect
-         ry="2.8920915"
-         y="55.108742"
-         x="96.4403"
-         height="13.777185"
-         width="28.457788"
-         id="rectEingesetztIn"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         inkscape:label="#rectEingesetztIn" />
-      <text
-         id="textEingesetztIn"
-         y="60.178814"
-         x="110.57455"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         xml:space="preserve"
-         inkscape:label="#textEingesetztIn"><tspan
+                sodipodi:role="line"
+                id="tspan7439"
+                x="110.57455"
+                y="67.633316">an</tspan></text>
+      </g>
+      <g
+              style="opacity:1"
+              id="predicateEingesetztIn"
+              transform="translate(4.3393593,72.671864)"
+              inkscape:label="#predicateEingesetztIn">
+        <rect
+                ry="2.8920915"
+                y="55.108742"
+                x="96.4403"
+                height="13.777185"
+                width="28.457788"
+                id="rectEingesetztIn"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                inkscape:label="#rectEingesetztIn" />
+        <text
+                id="textEingesetztIn"
+                y="60.178814"
+                x="110.57455"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                xml:space="preserve"
+                inkscape:label="#textEingesetztIn"><tspan
            sodipodi:role="line"
            id="tspan7469"
            x="110.57455"
            y="60.178814">eingesetzt</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7471"
-           x="110.57455"
-           y="67.633316">in</tspan></text>
-    </g>
-    <g
-       inkscape:label="#predicateAngebotenVon"
-       transform="translate(72.778306,127.71051)"
-       id="predicateAngebotenVon"
-       style="display:inline;opacity:1">
-      <rect
-         inkscape:label="#rectAngebotenVon"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         id="rectAngebotenVon"
-         width="28.457788"
-         height="13.777185"
-         x="96.4403"
-         y="55.108742"
-         ry="2.8920915" />
-      <text
-         inkscape:label="#textAngebotenVon"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         x="110.57455"
-         y="60.178814"
-         id="textAngebotenVon"><tspan
+                sodipodi:role="line"
+                id="tspan7471"
+                x="110.57455"
+                y="67.633316">in</tspan></text>
+      </g>
+      <g
+              inkscape:label="#predicateAngebotenVon"
+              transform="translate(72.778306,127.71051)"
+              id="predicateAngebotenVon"
+              style="display:inline;opacity:1">
+        <rect
+                inkscape:label="#rectAngebotenVon"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                id="rectAngebotenVon"
+                width="28.457788"
+                height="13.777185"
+                x="96.4403"
+                y="55.108742"
+                ry="2.8920915" />
+        <text
+                inkscape:label="#textAngebotenVon"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                x="110.57455"
+                y="60.178814"
+                id="textAngebotenVon"><tspan
            sodipodi:role="line"
            id="tspan7491"
            x="110.57455"
            y="60.178814">angeboten</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7493"
-           x="110.57455"
-           y="67.633316">von</tspan></text>
-    </g>
-    <g
-       style="display:inline;opacity:1"
-       id="predicateCharakterisiertDurch"
-       transform="translate(-45.04964,-10.159286)"
-       inkscape:label="#predicateCharakterisiertDurch">
-      <rect
-         ry="2.8920915"
-         y="55.108742"
-         x="96.4403"
-         height="13.777185"
-         width="28.457788"
-         id="rectCharakterisiertDurch"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         inkscape:label="#rectCharakterisiertDurch" />
-      <text
-         id="textCharakterisiertDurch"
-         y="60.178814"
-         x="110.57455"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         xml:space="preserve"
-         inkscape:label="#textCharakterisiertDurch"><tspan
+                sodipodi:role="line"
+                id="tspan7493"
+                x="110.57455"
+                y="67.633316">von</tspan></text>
+      </g>
+      <g
+              style="display:inline;opacity:1"
+              id="predicateCharakterisiertDurch"
+              transform="translate(-45.04964,-10.159286)"
+              inkscape:label="#predicateCharakterisiertDurch">
+        <rect
+                ry="2.8920915"
+                y="55.108742"
+                x="96.4403"
+                height="13.777185"
+                width="28.457788"
+                id="rectCharakterisiertDurch"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                inkscape:label="#rectCharakterisiertDurch" />
+        <text
+                id="textCharakterisiertDurch"
+                y="60.178814"
+                x="110.57455"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                xml:space="preserve"
+                inkscape:label="#textCharakterisiertDurch"><tspan
            sodipodi:role="line"
            id="tspan7523"
            x="110.57455"
            y="60.178814">charakterisiert</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7525"
-           x="110.57455"
-           y="67.633316">durch</tspan></text>
-    </g>
-    <g
-       inkscape:label="#predicateDefiniertDurchMkOrd"
-       transform="translate(-36.801057,47.428119)"
-       id="predicateDefiniertDurchMkOrd"
-       style="display:inline;opacity:1">
-      <rect
-         inkscape:label="#rectDefiniertDurchMkOrd"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         id="rectDefiniertDurchMkOrd"
-         width="28.457788"
-         height="13.777185"
-         x="96.4403"
-         y="55.108742"
-         ry="2.8920915" />
-      <text
-         inkscape:label="#textDefiniertDurchMkOrd"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         x="110.57455"
-         y="60.178814"
-         id="textDefiniertDurchMkOrd"><tspan
+                sodipodi:role="line"
+                id="tspan7525"
+                x="110.57455"
+                y="67.633316">durch</tspan></text>
+      </g>
+      <g
+              inkscape:label="#predicateDefiniertDurchMkOrd"
+              transform="translate(-36.801057,47.428119)"
+              id="predicateDefiniertDurchMkOrd"
+              style="display:inline;opacity:1">
+        <rect
+                inkscape:label="#rectDefiniertDurchMkOrd"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                id="rectDefiniertDurchMkOrd"
+                width="28.457788"
+                height="13.777185"
+                x="96.4403"
+                y="55.108742"
+                ry="2.8920915" />
+        <text
+                inkscape:label="#textDefiniertDurchMkOrd"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                x="110.57455"
+                y="60.178814"
+                id="textDefiniertDurchMkOrd"><tspan
            sodipodi:role="line"
            id="tspan7557"
            x="110.57455"
            y="60.178814">definiert</tspan><tspan
-           sodipodi:role="line"
-           id="tspan7559"
-           x="110.57455"
-           y="67.633316">durch</tspan></text>
-    </g>
-    <g
-       style="display:inline;opacity:1"
-       id="predicateDefiniertDurchSgOrd"
-       transform="translate(-39.284882,99.957953)"
-       inkscape:label="#predicateDefiniertDurchSgOrd">
-      <rect
-         ry="2.8920915"
-         y="55.108742"
-         x="96.4403"
-         height="13.777185"
-         width="28.457788"
-         id="rectDefiniertDurchSgOrd"
-         style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         inkscape:label="#rectDefiniertDurchSgOrd" />
-      <text
-         id="textDefiniertDurchSgOrd"
-         y="60.178814"
-         x="110.57455"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
-         xml:space="preserve"
-         inkscape:label="#textDefiniertDurchSgOrd"><tspan
+                sodipodi:role="line"
+                id="tspan7559"
+                x="110.57455"
+                y="67.633316">durch</tspan></text>
+      </g>
+      <g
+              style="display:inline;opacity:1"
+              id="predicateDefiniertDurchSgOrd"
+              transform="translate(-39.284882,99.957953)"
+              inkscape:label="#predicateDefiniertDurchSgOrd">
+        <rect
+                ry="2.8920915"
+                y="55.108742"
+                x="96.4403"
+                height="13.777185"
+                width="28.457788"
+                id="rectDefiniertDurchSgOrd"
+                style="fill:none;stroke-width:0.184768;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
+                inkscape:label="#rectDefiniertDurchSgOrd" />
+        <text
+                id="textDefiniertDurchSgOrd"
+                y="60.178814"
+                x="110.57455"
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.9636px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14909;paint-order:stroke markers fill"
+                xml:space="preserve"
+                inkscape:label="#textDefiniertDurchSgOrd"><tspan
            y="60.178814"
            x="110.57455"
            id="tspan7583"
            sodipodi:role="line">definiert</tspan><tspan
-           y="67.633316"
-           x="110.57455"
-           id="tspan7585"
-           sodipodi:role="line">durch</tspan></text>
+                y="67.633316"
+                x="110.57455"
+                id="tspan7585"
+                sodipodi:role="line">durch</tspan></text>
+      </g>
     </g>
-    <g
-       id="nodeModulKuerzel"
-       inkscape:label="#nodeModulKuerzel"
-       transform="translate(-8.4633719,6.3780651)"
-       style="display:inline;opacity:1"
-       inkscape:connector-avoid="true">
-      <rect
-         ry="4.1070342"
-         y="74.969971"
-         x="88.421783"
-         height="10.819892"
-         width="70.38073"
-         id="rectModulKuerzel"
-         style="opacity:1;fill:#ff6600;stroke:#000000;stroke-width:0.57615;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:label="#rectModulKuerzel" />
-      <text
-         transform="scale(0.92509875,1.0809657)"
-         id="textModulKuerzel"
-         y="77.408791"
-         x="101.81242"
-         style="font-style:normal;font-weight:normal;font-size:8.5143px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.212858"
-         xml:space="preserve"
-         inkscape:label="#textModulKuerzel"><tspan
+    <g id="nodes" style="display:inline">
+      <g
+              id="nodeModulKuerzel"
+              inkscape:label="#nodeModulKuerzel"
+              transform="translate(-8.4633719,6.3780651)"
+              style="display:inline;opacity:1"
+              inkscape:connector-avoid="true">
+        <rect
+                ry="4.1070342"
+                y="74.969971"
+                x="88.421783"
+                height="10.819892"
+                width="70.38073"
+                id="rectModulKuerzel"
+                style="opacity:1;fill:#ff6600;stroke:#000000;stroke-width:0.57615;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                inkscape:label="#rectModulKuerzel" />
+        <text
+                transform="scale(0.92509875,1.0809657)"
+                id="textModulKuerzel"
+                y="77.408791"
+                x="101.81242"
+                style="font-style:normal;font-weight:normal;font-size:8.5143px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.212858"
+                xml:space="preserve"
+                inkscape:label="#textModulKuerzel"><tspan
            style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:8.5143px;font-family:Arial;-inkscape-font-specification:'Arial Black Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.212858"
            y="77.408791"
            x="101.81242"
            id="tspan1452"
            sodipodi:role="line">Modul &lt;Kürzel&gt;</tspan></text>
-    </g>
-    <g
-       id="nodeDidaktik"
-       inkscape:label="#nodeDidaktik"
-       transform="translate(9.6052193,8.731541)"
-       inkscape:connector-avoid="true"
-       style="opacity:1">
-      <rect
-         ry="2.6914473"
-         y="4.4790034"
-         x="85.728951"
-         height="10.552668"
-         width="35.965206"
-         id="rectDidaktik"
-         style="opacity:1;fill:#808000;stroke:#000000;stroke-width:0.535845;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:label="#rectDidaktik" />
-      <text
-         id="textDidaktik"
-         y="12.376423"
-         x="88.941063"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.192774"
-         xml:space="preserve"
-         inkscape:label="#tDidaktik"><tspan
+      </g>
+      <g
+              id="nodeDidaktik"
+              inkscape:label="#nodeDidaktik"
+              transform="translate(9.6052193,8.731541)"
+              inkscape:connector-avoid="true"
+              style="opacity:1">
+        <rect
+                ry="2.6914473"
+                y="4.4790034"
+                x="85.728951"
+                height="10.552668"
+                width="35.965206"
+                id="rectDidaktik"
+                style="opacity:1;fill:#808000;stroke:#000000;stroke-width:0.535845;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                inkscape:label="#rectDidaktik" />
+        <text
+                id="textDidaktik"
+                y="12.376423"
+                x="88.941063"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.192774"
+                xml:space="preserve"
+                inkscape:label="#tDidaktik"><tspan
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.192774"
            y="12.376423"
            x="88.941063"
            id="tspan1467"
            sodipodi:role="line">Didaktik</tspan></text>
-    </g>
-    <g
-       inkscape:connector-avoid="true"
-       transform="translate(146.35375,11.109229)"
-       inkscape:label="#nodeSoWiSeXY"
-       id="nodeSoWiSeXY"
-       style="opacity:1">
-      <rect
-         inkscape:label="#rectSoWiSeXY"
-         style="opacity:1;fill:#ff7f2a;stroke:#000000;stroke-width:0.628251;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rectSoWiSeXY"
-         width="49.875843"
-         height="10.460261"
-         x="85.775154"
-         y="4.5252066"
-         ry="2.6678791" />
-      <text
-         inkscape:label="#textSoWiSeXY"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192774"
-         x="88.941063"
-         y="12.376423"
-         id="textSoWiSeXY"><tspan
+      </g>
+      <g
+              inkscape:connector-avoid="true"
+              transform="translate(146.35375,11.109229)"
+              inkscape:label="#nodeSoWiSeXY"
+              id="nodeSoWiSeXY"
+              style="opacity:1">
+        <rect
+                inkscape:label="#rectSoWiSeXY"
+                style="opacity:1;fill:#ff7f2a;stroke:#000000;stroke-width:0.628251;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                id="rectSoWiSeXY"
+                width="49.875843"
+                height="10.460261"
+                x="85.775154"
+                y="4.5252066"
+                ry="2.6678791" />
+        <text
+                inkscape:label="#textSoWiSeXY"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192774"
+                x="88.941063"
+                y="12.376423"
+                id="textSoWiSeXY"><tspan
            sodipodi:role="line"
            id="tspan7102"
            x="88.941063"
            y="12.376423"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:0.192774">So/WiSe XY</tspan></text>
-    </g>
-    <g
-       id="nodePerson"
-       inkscape:label="#nodePerson"
-       transform="translate(146.68349,75.989444)"
-       inkscape:connector-avoid="true"
-       style="display:inline;opacity:1">
-      <rect
-         ry="2.6844354"
-         y="4.4927497"
-         x="94.966393"
-         height="10.525175"
-         width="31.682842"
-         id="rectPerson"
-         style="opacity:1;fill:#983f80;fill-opacity:0.7;stroke:#000000;stroke-width:0.502278;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:label="#rectPerson" />
-      <text
-         id="textPerson"
-         y="12.376423"
-         x="97.709091"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192774"
-         xml:space="preserve"
-         inkscape:label="#textPerson"><tspan
+      </g>
+      <g
+              id="nodePerson"
+              inkscape:label="#nodePerson"
+              transform="translate(146.68349,75.989444)"
+              inkscape:connector-avoid="true"
+              style="display:inline;opacity:1">
+        <rect
+                ry="2.6844354"
+                y="4.4927497"
+                x="94.966393"
+                height="10.525175"
+                width="31.682842"
+                id="rectPerson"
+                style="opacity:1;fill:#983f80;fill-opacity:0.7;stroke:#000000;stroke-width:0.502278;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                inkscape:label="#rectPerson" />
+        <text
+                id="textPerson"
+                y="12.376423"
+                x="97.709091"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192774"
+                xml:space="preserve"
+                inkscape:label="#textPerson"><tspan
            sodipodi:role="line"
            id="tspan7236"
            x="97.709091"
            y="12.376423">Person</tspan></text>
-    </g>
-    <g
-       style="display:inline;opacity:1"
-       inkscape:connector-avoid="true"
-       transform="translate(78.741045,124.08901)"
-       inkscape:label="#nodeLiteratur"
-       id="nodeLiteratur">
-      <rect
-         inkscape:label="#rectLiteratur"
-         style="opacity:1;fill:#808080;fill-opacity:0.7;stroke:#000000;stroke-width:0.549744;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rectLiteratur"
-         width="38.125904"
-         height="10.477709"
-         x="94.990128"
-         y="4.5164828"
-         ry="2.6723292" />
-      <text
-         inkscape:label="#textLiteratur"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192774"
-         x="98.059006"
-         y="12.376423"
-         id="textLiteratur"><tspan
+      </g>
+      <g
+              style="display:inline;opacity:1"
+              inkscape:connector-avoid="true"
+              transform="translate(78.741045,124.08901)"
+              inkscape:label="#nodeLiteratur"
+              id="nodeLiteratur">
+        <rect
+                inkscape:label="#rectLiteratur"
+                style="opacity:1;fill:#808080;fill-opacity:0.7;stroke:#000000;stroke-width:0.549744;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                id="rectLiteratur"
+                width="38.125904"
+                height="10.477709"
+                x="94.990128"
+                y="4.5164828"
+                ry="2.6723292" />
+        <text
+                inkscape:label="#textLiteratur"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192774"
+                x="98.059006"
+                y="12.376423"
+                id="textLiteratur"><tspan
            sodipodi:role="line"
            id="tspan7339"
            x="98.059006"
            y="12.376423">Literatur</tspan></text>
-    </g>
-    <g
-       id="nodeOrganisation"
-       inkscape:label="#nodeOrganisation"
-       transform="translate(135.95161,178.85921)"
-       inkscape:connector-avoid="true"
-       style="display:inline;opacity:1">
-      <rect
-         ry="2.6473339"
-         y="4.565484"
-         x="95.039131"
-         height="10.379706"
-         width="53.430599"
-         id="rectOrganisation"
-         style="opacity:1;fill:#800080;fill-opacity:0.7;stroke:#000000;stroke-width:0.647746;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:label="#rectOrganisation" />
-      <text
-         id="textOrganisation"
-         y="12.376423"
-         x="98.060768"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.192774"
-         xml:space="preserve"
-         inkscape:label="#textOrganisation"><tspan
+      </g>
+      <g
+              id="nodeOrganisation"
+              inkscape:label="#nodeOrganisation"
+              transform="translate(135.95161,178.85921)"
+              inkscape:connector-avoid="true"
+              style="display:inline;opacity:1">
+        <rect
+                ry="2.6473339"
+                y="4.565484"
+                x="95.039131"
+                height="10.379706"
+                width="53.430599"
+                id="rectOrganisation"
+                style="opacity:1;fill:#800080;fill-opacity:0.7;stroke:#000000;stroke-width:0.647746;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                inkscape:label="#rectOrganisation" />
+        <text
+                id="textOrganisation"
+                y="12.376423"
+                x="98.060768"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.192774"
+                xml:space="preserve"
+                inkscape:label="#textOrganisation"><tspan
            sodipodi:role="line"
            id="tspan7403"
            x="98.060768"
            y="12.376423">Organisation</tspan></text>
-    </g>
-    <g
-       style="display:inline;opacity:1"
-       inkscape:connector-avoid="true"
-       transform="translate(-6.0809803,181.29177)"
-       inkscape:label="#nodeStudiengang"
-       id="nodeStudiengang">
-      <rect
-         inkscape:label="#rectStudiengang"
-         style="opacity:1;fill:#0000ff;fill-opacity:0.7;stroke:#000000;stroke-width:0.647746;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rectStudiengang"
-         width="53.430599"
-         height="10.379706"
-         x="95.039131"
-         y="4.565484"
-         ry="2.6473339" />
-      <text
-         inkscape:label="#textStudiengang"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.192774"
-         x="98.060768"
-         y="12.376423"
-         id="textStudiengang"><tspan
+      </g>
+      <g
+              style="display:inline;opacity:1"
+              inkscape:connector-avoid="true"
+              transform="translate(-6.0809803,181.29177)"
+              inkscape:label="#nodeStudiengang"
+              id="nodeStudiengang">
+        <rect
+                inkscape:label="#rectStudiengang"
+                style="opacity:1;fill:#0000ff;fill-opacity:0.7;stroke:#000000;stroke-width:0.647746;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                id="rectStudiengang"
+                width="53.430599"
+                height="10.379706"
+                x="95.039131"
+                y="4.565484"
+                ry="2.6473339" />
+        <text
+                inkscape:label="#textStudiengang"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.192774"
+                x="98.060768"
+                y="12.376423"
+                id="textStudiengang"><tspan
            sodipodi:role="line"
            id="tspan7457"
            x="98.060768"
            y="12.376423">Studiengang</tspan></text>
-    </g>
-    <g
-       inkscape:connector-avoid="true"
-       transform="translate(-74.46602,9.6341453)"
-       inkscape:label="#nodeBeschreibung"
-       id="nodeBeschreibung"
-       style="opacity:1">
-      <rect
-         inkscape:label="#rectBeschreibung"
-         style="opacity:1;fill:#5dc900;fill-opacity:1;stroke:#000000;stroke-width:0.671502;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rectBeschreibung"
-         width="57.216045"
-         height="10.41701"
-         x="85.796776"
-         y="4.5468321"
-         ry="2.6568482" />
-      <text
-         inkscape:label="#textBeschreibung"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192774"
-         x="88.647865"
-         y="12.376423"
-         id="textBeschreibung"><tspan
+      </g>
+      <g
+              inkscape:connector-avoid="true"
+              transform="translate(-74.46602,9.6341453)"
+              inkscape:label="#nodeBeschreibung"
+              id="nodeBeschreibung"
+              style="opacity:1">
+        <rect
+                inkscape:label="#rectBeschreibung"
+                style="opacity:1;fill:#5dc900;fill-opacity:1;stroke:#000000;stroke-width:0.671502;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                id="rectBeschreibung"
+                width="57.216045"
+                height="10.41701"
+                x="85.796776"
+                y="4.5468321"
+                ry="2.6568482" />
+        <text
+                inkscape:label="#textBeschreibung"
+                xml:space="preserve"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192774"
+                x="88.647865"
+                y="12.376423"
+                id="textBeschreibung"><tspan
            sodipodi:role="line"
            id="tspan7511"
            x="88.647865"
            y="12.376423">Beschreibung</tspan></text>
-    </g>
-    <g
-       style="opacity:1"
-       id="nodeOrdnung"
-       inkscape:label="#nodeOrdnung"
-       transform="translate(-67.927195,124.84849)"
-       inkscape:connector-avoid="true">
-      <rect
-         ry="2.688169"
-         y="5.111022"
-         x="85.968475"
-         height="10.539814"
-         width="37.757324"
-         id="rectOrdnung"
-         style="opacity:1;fill:#660000;fill-opacity:1;stroke:#000000;stroke-width:0.548699;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:label="#rectOrdnung" />
-      <text
-         id="textOrdnung"
-         y="12.376423"
-         x="88.647865"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.192774"
-         xml:space="preserve"
-         inkscape:label="#textOrdnung"><tspan
+      </g>
+      <g
+              style="opacity:1"
+              id="nodeOrdnung"
+              inkscape:label="#nodeOrdnung"
+              transform="translate(-67.927195,124.84849)"
+              inkscape:connector-avoid="true">
+        <rect
+                ry="2.688169"
+                y="5.111022"
+                x="85.968475"
+                height="10.539814"
+                width="37.757324"
+                id="rectOrdnung"
+                style="opacity:1;fill:#660000;fill-opacity:1;stroke:#000000;stroke-width:0.548699;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                inkscape:label="#rectOrdnung" />
+        <text
+                id="textOrdnung"
+                y="12.376423"
+                x="88.647865"
+                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.71089px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.192774"
+                xml:space="preserve"
+                inkscape:label="#textOrdnung"><tspan
            sodipodi:role="line"
            id="tspan7653"
            x="88.647865"
            y="12.376423">Ordnung</tspan></text>
+      </g>
     </g>
     <path
        style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7661)"
