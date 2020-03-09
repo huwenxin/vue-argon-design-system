@@ -1,13 +1,12 @@
 <template>
     <div>
-
         <div class="position-relative">
             <!-- shape Hero -->
             <section class="section-shaped my-0">
                 <div class="shape shape-style-1 bg-gradient-warning">
                 </div>
                 <div class="container shape-container d-flex">
-                    <div class="col px-0">
+                    <div class="col px-0 w-50">
                         <div class="row">
                             <div class="col-lg-10">
                                 <h1 class="display-3  text-white">Modulkatalog@THB
@@ -16,65 +15,36 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div>
-                        <div v-for="(coursejson, index) in siteLoad" v-bind:key="index">
-                            <p>{{ coursejson }}</p>
-                        </div>
-                    </div>-->
-                    <base-nav class="navbar-main" type="" expand>
-                        <ul class="navbar-nav">
-                            <div class="nav-link col-lg-6">
-                                <base-input class="mb-2">
-                                    <select class="form-control form-control-alternative">
-                                        <option disabled value="" selected>Studiengänge auswählen</option>
-                                        <option value="wi">WI Bachelor</option>
-                                        <option value="bwl">WI Master</option>
-                                    </select>
-                                </base-input>
-                            </div>
-
-                            <div class="nav-link col-lg-6">
-                                <base-input class="mb-2">
-                                    <select class="form-control form-control-alternative" @change="coursePost()">
-                                        <option disabled value="" selected>Module auswählen</option>
-                                        <option v-for="(coursejson, index) in siteLoad" v-bind:key="index">
-                                                {{ coursejson.module.value }}
-                                        </option>
-                                    </select>
-                                </base-input>
-                            </div>
-                        </ul>
+                    <base-nav class="navbar-main w-50" type="" expand>
+                        <Select @module="getModule"></Select>
                     </base-nav>
                 </div>
             </section>
             <!-- 1st Hero Variation -->
         </div>
 
-        <section class="section bg-secondary">
+        <section class="section">
             <div class="container">
                 <div ref="dim" class="row row-grid align-items-center">
                     <div class="col-md-6">
                         <!--<Graph :data="data"></Graph>-->
-                        <SvgGraph></SvgGraph>
+                        <SvgGraph :module-uri="selectedModule"></SvgGraph>
                         <!--<div style="padding-top: 10px; text-align: center" @click="changeData()">
                             <button>Change Data</button>
                         </div>-->
-                        <!--<div v-for="(json, index) in siteLoad" v-bind:key="index">
+                        <!--<div v-for="(json, index) in moduleList" v-bind:key="index">
                             <p>{{ json.label.value }}</p>
                         </div>-->
                     </div>
                     <div class="col-md-6">
                         <div class="pl-md-5" id="formfield">
-                            <h3 v-if="Object.keys(siteLoad).length != 0">{{ siteLoad[3].module.value }}</h3>
+                            <h3 id="test">Überschrift</h3>
                             <!--<h3>Überschrift Formular</h3>-->
                             <!--<p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.
                                 Just make sure you enable them first via JavaScript.</p>-->
-                            <p id="test1">The kit comes with three pre-built pages to help you get started faster. You can change
-                                the text and images and you're good to go.</p>
-                            <p id="test2">The kit comes with three pre-built pages to help you get started faster. You can change
-                                the text and images and you're good to go.</p>
-                            <a id="test3" href="/" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful
-                                websites</a>
+                            <p id="test1">xxx</p>
+                            <p id="test2">xxx</p>
+                            <a id="test3" href="/" class="font-weight-bold text-warning mt-5"></a>
                         </div>
                     </div>
                 </div>
@@ -90,6 +60,7 @@
     import CloseButton from "@/components/CloseButton";
     import axios from "axios";
     import SvgGraph from "./components/SvgGraph";
+    import Select from "./components/Select";
 
     export default {
         name: "home",
@@ -98,7 +69,8 @@
             BaseDropdown,
             BaseNav,
             CloseButton,
-            SvgGraph
+            SvgGraph,
+            Select
         },
         data() {
             return {
@@ -108,8 +80,9 @@
                 },
                 data: null,
                 dataList: ["assets/data.json"],
-                siteLoad: [],
-                courseData: []
+                moduleList: [],
+                courseData: [],
+                selectedModule: ''
             }
         },
         mounted() {
@@ -119,28 +92,16 @@
             } = this.$refs.dim.getBoundingClientRect();
             this.dims.width = width / 2;
             this.dims.height = height + 170;
-            this.changeData();
+            /*this.changeData();*/
         },
         methods: {
             changeData() {
-                /*const dataIndex = Math.floor(Math.random() * this.dataList.length)
+                const dataIndex = Math.floor(Math.random() * this.dataList.length)
                 d3.json(this.dataList[dataIndex]).then(data => {
                     this.data = data
                 }).catch(error => {
                     console.error(error)
-                })*/
-
-            },
-            startPost(query) {
-                axios.post('http://fbw-sgmwi.th-brandenburg.de:3030/modcat/query', query, {headers: {'Content-Type': 'application/sparql-query'}})
-                    .then(response => {
-                        // JSON responses are automatically parsed.
-                         this.siteLoad = response.data.results.bindings
-                        //return response.data.results.bindings
-                    })
-                    .catch(e => {
-                        this.errors.push(e)
-                    })
+                })
             },
             coursePost(query) {
                 axios.post('http://fbw-sgmwi.th-brandenburg.de:3030/modcat/query', query, {headers: {'Content-Type': 'application/sparql-query'}})
@@ -151,20 +112,24 @@
                     .catch(e => {
                         this.errors.push(e)
                     })
-            }
+            },
+            getModule(value){
+                this.selectedModule = value;
+            },
         },
-        beforeMount(){
+        /*beforeMount(){
             this.startPost('PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ' +
-                'PREFIX module: <https://bmake.th-brandenburg.de/module/>' +
-                'PREFIX schema: <https://schema.org/>' +
-                'SELECT DISTINCT ?module ?label' +
+                'PREFIX module: <https://bmake.th-brandenburg.de/module/> ' +
+                'PREFIX schema: <https://schema.org/> ' +
+                'SELECT DISTINCT ?module ?label ' +
                 'WHERE { ' +
-                '  ?module a module:Module ;' +
-                '          schema:isPartOf module:WIB ;' +
-                '          rdfs:label ?label.' +
+                '  ?module a module:Module ; ' +
+                '          schema:isPartOf module:WIB ; ' +
+                '          rdfs:label ?label. ' +
                 '}')
-        }
+        }*/
     };
+
 </script>
 <style>
     .faded {
