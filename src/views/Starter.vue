@@ -18,7 +18,8 @@
                     <base-nav class="navbar-main w-50" type="" expand>
                         <Select @module="getModule"></Select>
                     </base-nav>
-                </div>
+                </div> 
+
             </section>
             <!-- 1st Hero Variation -->
         </div>
@@ -36,19 +37,17 @@
                             <p>{{ json.label.value }}</p>
                         </div>-->
                     </div>
-                    <div class="col-md-6">
-                        <div class="pl-md-5" id="formfield">
-                            <h3 id="test">Überschrift</h3>
-                            <!--<h3>Überschrift Formular</h3>-->
-                            <!--<p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.
-                                Just make sure you enable them first via JavaScript.</p>-->
-                            <p id="test1">xxx</p>
-                            <p id="test2">xxx</p>
-                            <a id="test3" href="/" class="font-weight-bold text-warning mt-5"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div class="col-md-6">    
+                <base-button v-on:click="form = 'BasicData'">Basicdata</base-button>
+                <base-button v-on:click="form = 'Outcomes'">Outcomes </base-button>
+                <base-button v-on:click="form = 'Methods'">Methods</base-button> 
+                <br><br>
+                <keep-alive>     
+                <component v-bind:is="form"></component>
+                
+                </keep-alive>              
+               </div>
+            </div></div>
         </section>
     </div>
 </template>
@@ -61,6 +60,11 @@
     import axios from "axios";
     import SvgGraph from "./components/SvgGraph";
     import Select from "./components/Select";
+    import FormBasicData from "./components/FormBasicData";
+    import FormMethods from "./components/FormMethods";
+    import FormOutcomes from "./components/FormOutcomes";
+    import FormLiterature from "./components/FormLiterature";
+    import FormTeachers from "./components/FormTeachers";
 
     export default {
         name: "home",
@@ -70,10 +74,16 @@
             BaseNav,
             CloseButton,
             SvgGraph,
-            Select
+            Select,
+            'BasicData':FormBasicData,
+            'Methods':FormMethods,
+            'Outcomes':FormOutcomes,
+            'Literature':FormLiterature,
+            'Teachers':FormTeachers,
         },
         data() {
             return {
+                form: 'BasicData',
                 dims: {
                     width: null,
                     height: null
