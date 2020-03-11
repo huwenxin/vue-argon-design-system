@@ -1,16 +1,5 @@
 <template>
-    <div id="svgfield" :style="{width: width + 'px', height: height + 'px', border: '1px solid grey'}" class="bg-secondary">
-        <!--<svg width="100%" height="100%">
-            <defs>
-                <pattern id="innerGrid" :width="innerGridSize" :height="innerGridSize" patternUnits="userSpaceOnUse">
-                    <rect width="100%" height="100%" fill="none" stroke="#CCCCCC7A" stroke-width="0.5"/>
-                </pattern>
-                <pattern id="grid" :width="gridSize" :height="gridSize" patternUnits="userSpaceOnUse">
-                    <rect width="100%" height="100%" fill="url(#innerGrid)" stroke="#CCCCCC7A" stroke-width="1.5"/>
-                </pattern>
-            </defs>
-        </svg>-->
-        <!--<span v-if="Object.keys(moduleInfo).length > 0">{{moduleInfo[0].code.value}}</span>-->
+    <div id="svgfield" :style="{width: width + 'px', height: height + 'px', border: '1px solid grey', 'border-radius': '5px'}" class="bg-secondary">
     </div>
 </template>
 
@@ -26,31 +15,15 @@
                 width: 1024,
                 height: 768,
                 gridSize: 100,
-                moduleInfo:[]
+                moduleInfo: [],
+                modBasicData: [],
+                modOutcomes: [],
+                modMethods: [],
+                modLiterature: [],
+                modTeachers: [],
+                form: 'BasicData'
             }
         },
-        /*computed: {
-            innerGridSize() { return this.gridSize / 10 },
-            nodes() { return this.data.nodes },
-            links() { return this.data.links },
-            // These are needed for captions
-            linkTypes() {
-                const linkTypes = []
-                this.links.forEach(link => {
-                    if (linkTypes.indexOf(link.type) === -1)
-                        linkTypes.push(link.type)
-                })
-                return linkTypes.sort()
-            },
-            classes() {
-                const classes = []
-                this.nodes.forEach(node => {
-                    if (classes.indexOf(node.class) === -1)
-                        classes.push(node.class)
-                })
-                return classes.sort()
-            },
-        },*/
         created() {
             this.width = window.outerWidth/3.2
             this.height = window.innerHeight/3
@@ -90,13 +63,6 @@
                 let _this = this
                 d3.select('#nodes').selectAll("g")
                     .on('mouseover', function() {
-                        /*console.log('mouseover');
-                        console.log('this', this);*/
-                        /*d3.select(this)
-                            .style({
-                                'opacity': 0.1,
-                                'stroke-opacity': 0.3
-                            })*/
                         this.style.opacity = 0.5;
                         this.style.transition = '0.3s opacity';
                     })
@@ -108,21 +74,85 @@
                         g.classed('selected', false)
                         d3.select(this).classed('selected', true)
 
-                        const id = this.id;
+                        let id = this.id;
+                        console.log("id", id)
+                        let q = "";
 
-                        if (id == "nodePerson") {
-                            parent.document.getElementById("test").innerHTML = "<h3 id=\"test\">" + _this.moduleInfo[0].label.value +"-Person</h3>";
-                            parent.document.getElementById("test1").innerHTML = "<p id=\"test1\"> Dozent: "+ _this.moduleInfo[0].person.value +"</p>";
+                        if (id == "nodeModulKuerzel" || id == "nodeStudiengang" || id == "nodeOrdnung") {
+                            _this.form = "BasicData";
+                            //_this.queryModuleInfo();
                         } else if (id == "nodeSoWiSeXY") {
-                            parent.document.getElementById("test").innerHTML = "<h3 id=\"test\">" + _this.moduleInfo[0].label.value +"-Semester</h3>";
-                            parent.document.getElementById("test1").innerHTML = "<p id=\"test1\"> Modulkürzel: "+ _this.moduleInfo[0].code.value +"</p>";
-                            parent.document.getElementById("test2").innerHTML = "<p id=\"test2\">So/WiSe XY was clicked!!!!</p>";
-                        } else if (id == "nodeModulKuerzel") {
-                            parent.document.getElementById("test").innerHTML = "<h3 id=\"test\">" + _this.moduleInfo[0].label.value +"</h3>";
-                            parent.document.getElementById("test1").innerHTML = "<p id=\"test1\"> Modulkürzel: "+ _this.moduleInfo[0].code.value +"</p>";
-                        } else {
-                            i++;
-                            parent.document.getElementById("test3").innerHTML = "<p id=\"test3\">clicked " + i + " times</p>";
+                            //_this.form = "Teachers";
+                        } else if (id == "nodeDidaktik") {
+                            _this.form = "Methods";
+                            if (_this.modMethods.length == 0) {
+                                q = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                                    "PREFIX schema: <https://schema.org/> " +
+                                    "PREFIX module: <https://bmake.th-brandenburg.de/module/> " +
+                                    "SELECT * " +
+                                    "WHERE { " +
+                                    "  { " +
+                                    "    SELECT DISTINCT ?code ?label " +
+                                    " WHERE { " +
+                                    "<" + _this.moduleUri + "> schema:courseCode ?code ; " +
+                                    "   rdfs:label ?label. " +
+                                    " } " +
+                                    "  } UNION { " +
+                                    "     SELECT DISTINCT (GROUP_CONCAT(?interType ;separator=\"| \") as ?interTypes) " +
+                                    " WHERE { " +
+                                    "<" + _this.moduleUri + "> schema:interactivityType ?interType. " +
+                                    " } " +
+                                    "  } UNION { " +
+                                    "    SELECT DISTINCT (GROUP_CONCAT(CONCAT('[', ?wlname, ',', ?wlvalue,']');separator=\" | \") as ?wlnames) " +
+                                    " WHERE { " +
+                                    "<" + _this.moduleUri + "> module:addProp_CompWL ?workComp . " +
+                                    "       ?workComp schema:valueReference ?wlList . " +
+                                    "       ?wlList schema:name ?wlname; " +
+                                    "               schema:value ?wlvalue . " +
+                                    " } " +
+                                    "  } " +
+                                    " }";
+                                _this.queryModuleInfo(q);
+                            }
+                        } else if (id == "nodeBeschreibung") {
+                            _this.form = "Outcomes";
+                            if (_this.modOutcomes.length == 0) {
+                                q = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  " +
+                                    "PREFIX schema: <https://schema.org/>  " +
+                                    "PREFIX module: <https://bmake.th-brandenburg.de/module/>  " +
+                                    "SELECT *  " +
+                                    "WHERE {  " +
+                                    "  {  " +
+                                    "    SELECT DISTINCT ?code ?label  " +
+                                    " WHERE {  " +
+                                    "<" + _this.moduleUri + "> schema:courseCode ?code ;  " +
+                                    "   rdfs:label ?label.  " +
+                                    " }  " +
+                                    "  } UNION {  " +
+                                    "     SELECT DISTINCT (GROUP_CONCAT(?resList;separator=\" | \") as ?resLists)  " +
+                                    "  WHERE {  " +
+                                    "<" + _this.moduleUri + "> module:about_LResults ?LResults .  " +
+                                    "       ?LResults schema:itemListElement ?resList .  " +
+                                    "  }  " +
+                                    "  } UNION {  " +
+                                    "      SELECT DISTINCT (GROUP_CONCAT(?conList;separator=\" | \") as ?conLists)  " +
+                                    "  WHERE {  " +
+                                    "<" + _this.moduleUri + "> module:about_Content ?content.  " +
+                                    "       ?content schema:itemListElement ?conList .  " +
+                                    "  }   " +
+                                    "  } UNION {  " +
+                                    "      SELECT DISTINCT (GROUP_CONCAT(?examList;separator=\" | \") as ?examLists)  " +
+                                    "  WHERE {  " +
+                                    "<" + _this.moduleUri + "> module:about_Exam ?exam.  " +
+                                    "       ?exam schema:itemListElement ?examList .  " +
+                                    "  }   " +
+                                    "  }  " +
+                                    "}";
+                                _this.queryModuleInfo(q);
+                            }
+                        } else if (id == "nodeLiteratur") {
+                           //_this.form = "Literature";
+
                         }
 
                     })
@@ -130,10 +160,7 @@
 
 
             },
-            queryModuleInfo() {
-
-                d3.select('#nodes').selectAll("g").classed('selected', false)
-                d3.select("#nodeModulKuerzel").classed('selected', true)
+            queryModuleInfo(q) {
 
                 let query = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
                             "PREFIX schema: <https://schema.org/> " +
@@ -144,11 +171,13 @@
                             "          schema:hasCourseInstance ?instance; " +
                             "          schema:accountablePerson ?person. " +
                             "}";
-                console.log(query);
-                axios.post('http://fbw-sgmwi.th-brandenburg.de:3030/modcat/query', query, {headers: {'Content-Type': 'application/sparql-query'}})
+
+                console.log(q);
+                axios.post('http://fbw-sgmwi.th-brandenburg.de:3030/modcat/query', q, {headers: {'Content-Type': 'application/sparql-query'}})
                     .then(response => {
                         // JSON responses are automatically parsed.
                         this.moduleInfo = response.data.results.bindings
+                        /*console.log("moduleInfo", this.moduleInfo)*/
                     })
                     .catch(e => {
                         this.errors.push(e)
@@ -156,40 +185,130 @@
             },
             updateGraphText() {
 
-
                 let module = d3.select('#textModulKuerzel').select("tspan");
                 let semester = d3.select('#textSoWiSeXY').select("tspan");
+                console.log("updateInfo", this.moduleInfo)
                 let tModule = 'Modul ' + this.moduleInfo[0].code.value;
-                let tSemester = this.moduleInfo[0].instance.value.substring(39);
+                let tSemester = this.moduleInfo[0].semester.value.substring(39);
 
                 module.text(tModule);
                 semester.text(tSemester);
 
                 let relaCenMod = d3.select('#rectModulKuerzel').node().getBBox().width / 2 - 3
                 d3.select("#textModulKuerzel").attr("text-anchor", "middle").attr("dx", relaCenMod)
-
-                console.log("test", this.moduleInfo[0].label.value);
-                parent.document.getElementById("test").innerHTML = "<h3 id=\"test\">" + this.moduleInfo[0].label.value +"</h3>";
-                parent.document.getElementById("test1").innerHTML = "<p id=\"test1\"> Modulkürzel: "+ this.moduleInfo[0].code.value +"</p>";
-                parent.document.getElementById("test2").innerHTML = "<p id=\"test2\"> Semester: "+ this.moduleInfo[0].instance.value +"</p>";
-            }
+            },
         },
         watch: {
-            /*data: {
-                handler(newData) {
-                    this.updateData()
-                },
-                deep: true
-            },*/
             moduleUri: {
-                handler(newData) {
-                    this.queryModuleInfo()
+                handler(uri) {
+                    this.queryModuleInfo("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                        "PREFIX schema: <https://schema.org/> " +
+                        "PREFIX module: <https://bmake.th-brandenburg.de/module/> " +
+                        "SELECT * " +
+                        "WHERE { " +
+                        "  { " +
+                        "    SELECT DISTINCT ?code ?label ?curr_name ?curr_des ?modType_name ?grade_name ?grade_des ?sws_name ?ects ?semester ?durationSem ?courseMode ?eduUse ?url ?comment ?pre ?basedOn" +
+                        "WHERE { " +
+                        "<" + uri + "> schema:courseCode ?code ; " +
+                        "        rdfs:label ?label; " +
+                        "        module:eduAlignm_Curr ?curr ;  " +
+                        "        module:eduAlignm_Grade ?grade ; " +
+                        "        module:eduAlignm_ModuleType ?modType ;  " +
+                        "        module:eduAlignm_SWS ?sws ; " +
+                        "        schema:educationalCredentialAwarded ?ects ; " +
+                        "        schema:hasCourseInstance ?semester ; " +
+                        "        schema:educationalUse ?eduUse ; " +
+                        "        schema:coursePrerequisites ?pre ; " +
+                        "        schema:url ?url ; " +
+                        "        schema:comment ?comment . " +
+                        "        OPTIONAL { <" + uri + ">  schema:coursePrerequisites ?pre } " +
+                        "        OPTIONAL { <" + uri + ">  schema:isBasedOn ?basedOn } " +
+                        "    ?semester schema:duration ?durationSem; " +
+                        "             schema:courseMode ?courseMode. " +
+                        "     ?curr schema:targetName ?curr_name ; " +
+                        "           schema:targetDescription ?curr_des . " +
+                        "    ?grade schema:targetName ?grade_name ; " +
+                        "           schema:targetDescription ?grade_des . " +
+                        "    ?modType schema:targetName ?modType_name . " +
+                        "    ?sws schema:targetName ?sws_name .  " +
+                        "} " +
+                        "  } UNION { " +
+                        "    SELECT (GROUP_CONCAT(?language; separator=\" | \") as ?languages) " +
+                        "    WHERE { " +
+                        "    module:WIB_AAIT a module:Module; " +
+                        "    schema:inLanguage ?language . " +
+                        "} " +
+                        "  } UNION { " +
+                        "     SELECT (GROUP_CONCAT(?learnType; separator=\" | \") as ?learnTypes) " +
+                        "    WHERE { " +
+                        "    module:WIB_AAIT a module:Module; " +
+                        "    schema:learningResourceType ?learnType. " +
+                        "}   " +
+                        "  } " +
+                        "}");
+                    this.modOutcomes = [];
+                    this.modMethods = [];
+                    this.modLiterature = [];
+                    this.modTeachers = [];
+                    //this.updateGraphText()
                 }
             },
             moduleInfo: {
                 handler(newData) {
-                    this.updateGraphText()
+                    if (this.form == "BasicData") {
+                        this.updateGraphText();
+                        this.modBasicData = this.moduleInfo;
+                    } else {
+                        let mod = "mod" + this.form;
+                        this[mod] = this.moduleInfo;
+                    }
                 }
+            },
+            modBasicData: {
+                handler(newData) {
+                    if (this.modBasicData.length > 0) {
+                        this.$emit('modBasicData', newData);
+                    }
+                }
+            },
+            modOutcomes: {
+                handler(v) {
+                    console.log("modOutcomes", v)
+                    if (this.modOutcomes.length > 0) {
+                        this.$emit('modOutcomes', v);
+                    }
+                }
+            },
+            modMethods: {
+                handler(v) {
+                    console.log("modMethods", v)
+                    if (this.modMethods.length > 0) {
+                        this.$emit('modMethods', v);
+                    }
+                }
+            },
+            modLiterature: {
+                handler(v) {
+                    console.log("modLiterature", v)
+                    if (this.modLiterature.length > 0) {
+                        this.$emit('modLiterature', v);
+                    }
+                }
+            },
+            modTeachers: {
+                handler(v) {
+                    console.log("modTeachers", v)
+                    if (this.modTeachers.length > 0) {
+                        this.$emit('modTeachers', v);
+                    }
+                }
+            },
+            form: {
+                handler(v) {
+                    console.log("form", v)
+                    this.$emit('formType', v);
+                }
+
             }
         }
     }

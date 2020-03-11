@@ -1,6 +1,6 @@
 <template>
     
-                        <div class="pl-md-5" id="formfield">
+                        <div v-if="modBasis !== null" class="pl-md-5" id="formfield">
                             <h3 id="test">Basisdaten</h3>
                             <!--<h3>Überschrift Formular</h3>-->
                             <!--<p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.
@@ -8,11 +8,12 @@
                             <form id="basic">
                                 <div class="row">
                                 <div class="col-md-4">
-                                    <input v-model="modkurz" class="form-control" type="text" placeholder="Mod.kürzel" disabled> 
-                                    </div></div>
+                                    <input v-model="modBasis[0].code.value" class="form-control" type="text" placeholder="Mod.kürzel" disabled>
+                                    </div><p v-if="modBasis !== null">{{this.modBasis[0].label.value}}</p>
+                                </div>
                                     <div class="row">
                                     <div class="col-md-9">
-                                    <input class="form-control" type="text" v-model="description" placeholder="Modulbezeichnung">
+                                    <input class="form-control" type="text" v-model="modBasis[0].label.value" placeholder="Modulbezeichnung">
                                     </div>
                                     <div class="col-md-3">
                                     <select v-model="spo" class="form-control">
@@ -40,16 +41,16 @@
                                     <input v-model="semcount" class="form-control" type="number" placeholder="Lehrveranstaltungen" >
                                     </div>
                                     <div class="col-md-6">
-                                    <input v-model="usability" class="form-control" type="text" placeholder="Verwendbarkeit">
+                                    <input v-model="modBasis[0].eduUse.value" class="form-control" type="text" placeholder="Verwendbarkeit">
                                     </div>
                                     <div class="col-md-6">
-                                    <input v-model="teachingsws" class="form-control" type="number" placeholder="SWS" >
+                                    <input v-model="modBasis[0].sws_name.value" class="form-control" type="number" placeholder="SWS" >
                                     </div>
                                     <div class="col-md-6">
-                                    <input v-model="ects" class="form-control" type="number" placeholder="ECTS" >
+                                    <input v-model="modBasis[0].ects.value" class="form-control" type="number" placeholder="ECTS" >
                                     </div>
                                     <div class="col-md-4">
-                                    <input v-model="duration" class="form-control" type="number" placeholder="Dauer Semester">
+                                    <input v-model="modBasis[0].durationSem.value" class="form-control" type="number" placeholder="Dauer Semester">
                                     </div>
                                     <div class="col-md-8">
                                     <select v-model="frequency" class="form-control">
@@ -77,21 +78,20 @@
                                     </div>
                                     </div>
                                     <div class="col-md-12">
-                                    <input v-model="requirements" class="form-control" type="text" placeholder="Voraussetzungen">
+                                    <input v-model="modBasis[0].pre.value" class="form-control" type="text" placeholder="Voraussetzungen">
                                     </div>
                                     <div class="col-md-12">
-                                    <input v-model="website" class="form-control" type="text" placeholder="Website" default="www.th-brandenburg.de">
+                                    <input v-model="modBasis[0].url.value" class="form-control" type="text" placeholder="Website" default="www.th-brandenburg.de">
                                     </div>
                                     <div class="col-md-12">
                                     
-                                    <textarea class="form-control" v-model="comment" rows="3" placeholder="Kommentar / Besonderes"></textarea>
+                                    <textarea class="form-control" v-model="modBasis[0].comment.value" rows="3" placeholder="Kommentar / Besonderes"></textarea>
                                     
                                     </div><div>&nbsp;</div>
                                     
                                     <div class="col-md-12">
                                     <base-button type="primary">Speichern</base-button>
-                                    <base-button type="secondary">Download</base-button>   
-                                    <p>Message is: {{ description }}</p>
+                                    <base-button type="secondary">Download</base-button>
                                     </div>
 
                                 </div>
@@ -101,15 +101,8 @@
 </template>
 <script>
 export default {
-    
-    data() {
-        return{
-            spo:"",
-            modtype:"",
-            frequency:"",
-            lang:[]
-        }
-    }};
+    props: ['modBasis'],
+};
 
 </script>
 <style>

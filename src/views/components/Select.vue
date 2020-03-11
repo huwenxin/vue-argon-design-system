@@ -3,7 +3,7 @@
         <div class="nav-link">
             <base-input class="mb-2">
                 <select class="form-control form-control-alternative" @change="queryModuleList($event.target.value)">
-                    <option disabled value="" selected>Studiengänge auswählen</option>
+                    <option disabled value="" selected>Studiengang auswählen</option>
                     <option value="WIB">WI Bachelor</option>
                     <option value="WIM">WI Master</option>
                 </select>
@@ -11,7 +11,7 @@
         </div>
         <div class="nav-link">
             <select v-model="selected" class="form-control form-control-alternative">
-                <option disabled value=''>Module auswählen</option>
+                <option disabled value=''>Modul auswählen</option>
                 <option v-if="Object.keys(moduleList).length > 0" v-for="(modulejson, index) in moduleList" v-bind:value="modulejson.module.value" v-bind:key="index">
                     {{ modulejson.label.value }}
                 </option>

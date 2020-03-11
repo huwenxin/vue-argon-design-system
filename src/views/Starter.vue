@@ -28,22 +28,20 @@
             <div class="container">
                 <div ref="dim" class="row row-grid align-items-center">
                     <div class="col-md-6">
-                        <!--<Graph :data="data"></Graph>-->
-                        <SvgGraph :module-uri="selectedModule"></SvgGraph>
-                        <!--<div style="padding-top: 10px; text-align: center" @click="changeData()">
-                            <button>Change Data</button>
-                        </div>-->
-                        <!--<div v-for="(json, index) in moduleList" v-bind:key="index">
-                            <p>{{ json.label.value }}</p>
-                        </div>-->
+                        <SvgGraph :module-uri="selectedModule" @modBasicData="getModBasicData"
+                                  @modOutcomes="getModOutcomes" @modMethods="getModMethod" @modLiterature="getModLiter"
+                                  @modTeachers="getModTeacher" @formType="getFormType">
+                        </SvgGraph>
                     </div>
-                <div class="col-md-6">    
+                <div class="col-md-6">
                 <base-button v-on:click="form = 'BasicData'">Basicdata</base-button>
                 <base-button v-on:click="form = 'Outcomes'">Outcomes </base-button>
-                <base-button v-on:click="form = 'Methods'">Methods</base-button> 
+                <base-button v-on:click="form = 'Methods'">Methods</base-button>
                 <br><br>
-                <keep-alive>     
-                <component v-bind:is="form"></component>
+                <keep-alive>
+
+                <component v-bind:is="form = this.form" :modBasis="modBasis"></component>
+                <!--<component v-bind:is="form = 'Dynamic'"></component>-->
                 
                 </keep-alive>              
                </div>
@@ -65,6 +63,7 @@
     import FormOutcomes from "./components/FormOutcomes";
     import FormLiterature from "./components/FormLiterature";
     import FormTeachers from "./components/FormTeachers";
+    import FormDynamic from "./components/FormDynamic";
 
     export default {
         name: "home",
@@ -80,19 +79,21 @@
             'Outcomes':FormOutcomes,
             'Literature':FormLiterature,
             'Teachers':FormTeachers,
+            'Dynamic':FormDynamic,
         },
         data() {
             return {
-                form: 'BasicData',
                 dims: {
                     width: null,
                     height: null
                 },
-                data: null,
-                dataList: ["assets/data.json"],
-                moduleList: [],
-                courseData: [],
-                selectedModule: ''
+                selectedModule: '',
+                modBasis: null,
+                modOutcome: null,
+                modMethod: null,
+                modLiter: null,
+                modTeacher: null,
+                form: 'BasicData'
             }
         },
         mounted() {
@@ -105,15 +106,15 @@
             /*this.changeData();*/
         },
         methods: {
-            changeData() {
+            /*changeData() {
                 const dataIndex = Math.floor(Math.random() * this.dataList.length)
                 d3.json(this.dataList[dataIndex]).then(data => {
                     this.data = data
                 }).catch(error => {
                     console.error(error)
                 })
-            },
-            coursePost(query) {
+            },*/
+            /*coursePost(query) {
                 axios.post('http://fbw-sgmwi.th-brandenburg.de:3030/modcat/query', query, {headers: {'Content-Type': 'application/sparql-query'}})
                     .then(response => {
                         // JSON responses are automatically parsed.
@@ -122,10 +123,32 @@
                     .catch(e => {
                         this.errors.push(e)
                     })
-            },
-            getModule(value){
+            },*/
+            getModule(value) {
                 this.selectedModule = value;
             },
+            /*getModuleInfo(value) {
+                this.moduleInfo = value;
+            },*/
+            getModBasicData(value) {
+                this.modBasis = value;
+                console.log("ModBasisValueStarter", this.modBasis)
+            },
+            getModOutcomes(value) {
+                this.modOutcome = value;
+            },
+            getModMethod(value) {
+                this.modMethod = value;
+            },
+            getModLiter(value) {
+                this.modLiter = value;
+            },
+            getModTeacher(value) {
+                this.modTeacher = value;
+            },
+            getFormType(value) {
+                this.form = value;
+            }
         },
         /*beforeMount(){
             this.startPost('PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ' +
