@@ -72,7 +72,7 @@
                     .on("click", function() {
                         const g = d3.select('#nodes').selectAll("g")
                         g.classed('selected', false)
-                        d3.select(this).classed('selected', true)
+                        //d3.select(this).classed('selected', true)
 
                         let id = this.id;
                         console.log("id", id)
@@ -80,11 +80,19 @@
 
                         if (id == "nodeModulKuerzel" || id == "nodeStudiengang" || id == "nodeOrdnung") {
                             _this.form = "BasicData";
-                            //_this.queryModuleInfo();
+                            d3.select('#nodeModulKuerzel').classed('selected', true)
+                            d3.select('#nodeStudiengang').classed('selected', true)
+                            d3.select('#nodeOrdnung').classed('selected', true)
+
                         } else if (id == "nodeSoWiSeXY") {
                             //_this.form = "Teachers";
+                            d3.select('#nodeSoWiSeXY').classed('selected', true)
+                            d3.select('#nodePerson').classed('selected', true)
+                            d3.select('#nodeOrganisation').classed('selected', true)
+
                         } else if (id == "nodeDidaktik") {
                             _this.form = "Methods";
+                            d3.select('#nodeDidaktik').classed('selected', true)
                             if (_this.modMethods.length == 0) {
                                 q = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
                                     "PREFIX schema: <https://schema.org/> " +
@@ -98,12 +106,12 @@
                                     "   rdfs:label ?label. " +
                                     " } " +
                                     "  } UNION { " +
-                                    "     SELECT DISTINCT (GROUP_CONCAT(?interType ;separator=\"| \") as ?interTypes) " +
+                                    "     SELECT DISTINCT (GROUP_CONCAT(?interType ;separator=\"|| \") as ?interTypes) " +
                                     " WHERE { " +
                                     "<" + _this.moduleUri + "> schema:interactivityType ?interType. " +
                                     " } " +
                                     "  } UNION { " +
-                                    "    SELECT DISTINCT (GROUP_CONCAT(CONCAT('[', ?wlname, ',', ?wlvalue,']');separator=\" | \") as ?wlnames) " +
+                                    "    SELECT DISTINCT (GROUP_CONCAT(CONCAT('[', ?wlname, ',', ?wlvalue,']');separator=\" || \") as ?wlnames) " +
                                     " WHERE { " +
                                     "<" + _this.moduleUri + "> module:addProp_CompWL ?workComp . " +
                                     "       ?workComp schema:valueReference ?wlList . " +
@@ -116,6 +124,7 @@
                             }
                         } else if (id == "nodeBeschreibung") {
                             _this.form = "Outcomes";
+                            d3.select('#nodeBeschreibung').classed('selected', true)
                             if (_this.modOutcomes.length == 0) {
                                 q = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  " +
                                     "PREFIX schema: <https://schema.org/>  " +
@@ -129,19 +138,19 @@
                                     "   rdfs:label ?label.  " +
                                     " }  " +
                                     "  } UNION {  " +
-                                    "     SELECT DISTINCT (GROUP_CONCAT(?resList;separator=\" | \") as ?resLists)  " +
+                                    "     SELECT DISTINCT (GROUP_CONCAT(?resList;separator=\" || \") as ?resLists)  " +
                                     "  WHERE {  " +
                                     "<" + _this.moduleUri + "> module:about_LResults ?LResults .  " +
                                     "       ?LResults schema:itemListElement ?resList .  " +
                                     "  }  " +
                                     "  } UNION {  " +
-                                    "      SELECT DISTINCT (GROUP_CONCAT(?conList;separator=\" | \") as ?conLists)  " +
+                                    "      SELECT DISTINCT (GROUP_CONCAT(?conList;separator=\" || \") as ?conLists)  " +
                                     "  WHERE {  " +
                                     "<" + _this.moduleUri + "> module:about_Content ?content.  " +
                                     "       ?content schema:itemListElement ?conList .  " +
                                     "  }   " +
                                     "  } UNION {  " +
-                                    "      SELECT DISTINCT (GROUP_CONCAT(?examList;separator=\" | \") as ?examLists)  " +
+                                    "      SELECT DISTINCT (GROUP_CONCAT(?examList;separator=\" || \") as ?examLists)  " +
                                     "  WHERE {  " +
                                     "<" + _this.moduleUri + "> module:about_Exam ?exam.  " +
                                     "       ?exam schema:itemListElement ?examList .  " +
@@ -152,6 +161,9 @@
                             }
                         } else if (id == "nodeLiteratur") {
                            //_this.form = "Literature";
+                            d3.select('#nodeLiteratur').classed('selected', true)
+                            d3.select('#nodePerson').classed('selected', true)
+                            d3.select('#nodeOrganisation').classed('selected', true)
 
                         }
 
@@ -207,7 +219,7 @@
                         "SELECT * " +
                         "WHERE { " +
                         "  { " +
-                        "    SELECT DISTINCT ?code ?label ?curr_name ?curr_des ?modType_name ?grade_name ?grade_des ?sws_name ?ects ?semester ?durationSem ?courseMode ?eduUse ?url ?comment ?pre ?basedOn" +
+                        "    SELECT DISTINCT ?code ?label ?curr_name ?curr_des ?modType_name ?grade_name ?grade_des ?sws_name ?ects ?semester ?durationSem ?courseMode ?eduUse ?url ?comment ?pre ?basedOns" +
                         "WHERE { " +
                         "<" + uri + "> schema:courseCode ?code ; " +
                         "        rdfs:label ?label; " +
@@ -222,7 +234,12 @@
                         "        schema:url ?url ; " +
                         "        schema:comment ?comment . " +
                         "        OPTIONAL { <" + uri + ">  schema:coursePrerequisites ?pre } " +
-                        "        OPTIONAL { <" + uri + ">  schema:isBasedOn ?basedOn } " +
+                        "        OPTIONAL {  " +
+                        "           SELECT (GROUP_CONCAT(?basedOn; separator=\" || \") as ?basedOns) " +
+                        "           WHERE { " +
+                        "           <" + uri + ">  schema:isBasedOn ?basedOn . " +
+                        "           } " +
+                        "        } " +
                         "    ?semester schema:duration ?durationSem; " +
                         "             schema:courseMode ?courseMode. " +
                         "     ?curr schema:targetName ?curr_name ; " +
@@ -233,13 +250,13 @@
                         "    ?sws schema:targetName ?sws_name .  " +
                         "} " +
                         "  } UNION { " +
-                        "    SELECT (GROUP_CONCAT(?language; separator=\" | \") as ?languages) " +
+                        "    SELECT (GROUP_CONCAT(?language; separator=\" || \") as ?languages) " +
                         "    WHERE { " +
                         "    module:WIB_AAIT a module:Module; " +
                         "    schema:inLanguage ?language . " +
                         "} " +
                         "  } UNION { " +
-                        "     SELECT (GROUP_CONCAT(?learnType; separator=\" | \") as ?learnTypes) " +
+                        "     SELECT (GROUP_CONCAT(?learnType; separator=\" || \") as ?learnTypes) " +
                         "    WHERE { " +
                         "    module:WIB_AAIT a module:Module; " +
                         "    schema:learningResourceType ?learnType. " +
